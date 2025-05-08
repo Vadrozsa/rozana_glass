@@ -96,6 +96,28 @@ body {
      
 }
 
+.orderyourown {
+    transition: transform 0.3s ease;
+}
+
+.orderyourown:hover {
+    transform: scale(1.3);
+}
+
+.ownorder a {
+    text-decoration: none;
+    color: inherit; 
+}
+
+
+.ownorder a:visited {
+    color: inherit;               /* kattintás után is örökölt szín */
+}
+
+.ownorder a:active {
+    color: inherit;               /* aktív kattintáskor is örökölt szín */
+}
+
 .rights {
     color: white;
 }
