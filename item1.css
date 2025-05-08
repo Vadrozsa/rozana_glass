@@ -14,27 +14,18 @@ body {
 }
 
 .logo {
-    max-width:5%;
-    height: auto;
-    
+    max-width:2%;
+    height: auto;  
 }
 
-h4 {
-    color: white;
-}
+
 
 .logo-container {
-    text-align: center;    /* minden benne lévő elem középre igazítva */
-    padding: 20px;
     display: flex;
+    flex-wrap: wrap; 
+    margin-left: 20px;
 }
 
-.Rozanaszív {
-      display: flex;
-      gap: 20px;                 /* távolság a képek között */
-      flex-wrap: wrap;           /* ha kicsi a képernyő, sortörés engedélyezve */
- }
-    
  
  
  .bestsellercontainer img {
@@ -68,8 +59,92 @@ h4 {
     background-color: rgba(255, 255, 255, 0.3);
     padding: 100px;
     margin: 0;
+    display: flex;
+    gap: 20px;                 /* távolság a képek között */
+    flex-wrap: wrap;           /* ha kicsi a képernyő, sortörés engedélyezve */
   }
 
   .ringheadertext {
     font-size: 2rem;
+  }
+
+  .orderyourown {
+    margin-bottom: 90px;
+    margin-top: 70px;
+    text-align: center;    
+    
+}
+
+.ownorder {
+    display: inline-block; 
+    background-color: rgba(255, 255, 255, 0.5);
+    justify-content: center;  /* vízszintesen középre */
+    align-items: center; 
+    border: 4px solid;
+    border-color: white;
+    border-radius: 50px;
+    padding: 10px 20px; 
+    color: white;
+     
+}
+
+.rights {
+    color: white;
+}
+
+#navigationbar {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  color: black;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.logofirst {
+    letter-spacing: 1px;
+    color: white;
+}
+
+.menu-toggle {
+    cursor: pointer;
+    width: 30px;
+    margin-right: 50px;
+  }
+  
+  .menu-toggle div {
+    height: 4px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 100;
+  }
+  
+  .nav-links a {
+    color: #000;
+    text-decoration: none;
+    padding: 8px 0;
+    font-weight: bold;
+  }
+  
+  .nav-links.show {
+    display: flex;
   }

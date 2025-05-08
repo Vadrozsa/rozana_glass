@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
+@font-face {
+    font-family: 'lyzeroDEMO';
+    src: url(lyzero-demo/LyzeroDEMO.ttf) format(truetype);
+
+}
+
+body {
+    background-image: url('backroundrozana.png');
+    background-repeat: no-repeat;
+    background-size: cover; /* vagy 'contain', ha nem akarsz vágást */
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    max-width:2%;
+    height: auto;  
+}
+
+
+
+.logo-container {
+    display: flex;
+    flex-wrap: wrap; 
+    margin-left: 20px;
+}
+
+ .textdiv {
+    background-color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    text-align: justify;
+    padding: 50px;
+ }
+
+ .text {
+    font-size: 2rem;
+    color: white;
+    padding-left: 200px;
+    padding-right: 200px;
+    font-family: 'Cal Sans';
+ }
+ 
+.orderyourown {
+    margin-top: 70px;
+    text-align: center;    
+    
+}
+
+.ownorder {
+    font-size: 3rem;
+    justify-content: center;  /* vízszintesen középre */
+    align-items: center; 
+    border-top: 4px solid;
+    border-bottom: 4px solid;
+    border-color: white;
+    padding: 10px 20px; 
+    color: white;
+     
+}
+
+.rights {
+    color: white;
+}
+
+#navigationbar {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  color: black;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.logofirst {
+    letter-spacing: 1px;
+    color: white;
+}
+
+.menu-toggle {
+    cursor: pointer;
+    width: 30px;
+    margin-right: 50px;
+  }
+  
+  .menu-toggle div {
+    height: 4px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 100;
+  }
+  
+  .nav-links a {
+    color: #000;
+    text-decoration: none;
+    padding: 8px 0;
+    font-weight: bold;
+  }
+  
+  .nav-links.show {
+    display: flex;
+  }
